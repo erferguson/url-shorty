@@ -1,12 +1,20 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink
+} from "react-router-dom";
 
 import Shortly from "./Shortly";
+import Home from './Home'
 import Features from "./Features";
 import Pricing from "./Pricing";
 import Resources from "./Resources";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import Logo from '../NavComponents/Shortly'
 
 function Navigation() {
   return (
@@ -15,22 +23,22 @@ function Navigation() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Shortly</Link>
+              <NavLink to="/"><Logo/></NavLink>
             </li>
             <li>
-              <Link to="/features">Features</Link>
+              <NavLink to="/features">Features</NavLink>
             </li>
             <li>
-              <Link to="/pricing">Pricing</Link>
+              <NavLink to="/pricing">Pricing</NavLink>
             </li>
             <li>
-              <Link to="/resources">Resources</Link>
+              <NavLink to="/resources">Resources</NavLink>
             </li>
             <li>
-              <Link to="/login">Login</Link>
+              <NavLink to="/login">Login</NavLink>
             </li>
             <li>
-              <Link to="/sign-up">Sign Up</Link>
+              <NavLink to="/sign-up">Sign Up</NavLink>
             </li>
           </ul>
         </nav>
@@ -51,7 +59,7 @@ function Navigation() {
             <SignUp />
           </Route>
           <Route path="/">
-            <Shortly />
+            <Home />
           </Route>
         </Switch>
       </div>
