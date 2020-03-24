@@ -7,14 +7,14 @@ import {
   NavLink
 } from "react-router-dom";
 
-import Shortly from "./Shortly";
+import Shortly from "../../Assets/Shortly";
 import Home from './Home'
 import Features from "./Features";
 import Pricing from "./Pricing";
 import Resources from "./Resources";
 import Login from "./Login";
 import SignUp from "./SignUp";
-import Logo from '../NavComponents/Shortly'
+import Logo from '../../Assets/Shortly'
 
 function Navigation() {
   return (
