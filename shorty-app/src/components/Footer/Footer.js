@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 import "../../App.css"
 import Logo from "../../Assets/footer-logo"
-// import { Fbook, Twitter, Instagram, Pinterest } from "../social"
+import { Fbook, Twit, Pin, Insta } from '../../Assets/social'
 
 function Footer(){
     return (
@@ -13,6 +13,65 @@ function Footer(){
                     <ul>
                         <li>
                             <Link to="/"><Logo/></Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Features
+                        </li>
+                        <li>
+                            <Link to="/short">Link Shortening</Link>
+                        </li>
+                        <li>
+                            <Link to="/branding">Branding</Link>
+                        </li>
+                        <li>
+                            <Link to="/analytics">Analytics</Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Resources
+                        </li>
+                        <li>
+                            <Link to="/blog">Blog</Link>
+                        </li>
+                        <li>
+                            <Link to="/developers">Developers</Link>
+                        </li>
+                        <li>
+                            <Link to="/support">Support</Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Company
+                        </li>
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/team">Team</Link>
+                        </li>
+                        <li>
+                            <Link to="/careers">Careers</Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">Contact</Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href to="www.facebook.com"><Fbook/></a>
+                        </li>
+                        <li>
+                            <a href to="www.twitter.com"><Twit/></a>
+                        </li>
+                        <li>
+                            <a href to="www.pinterest.com"><Pin/></a>
+                        </li>
+                        <li>
+                            <a href to="www.instagram"><Insta/></a>
                         </li>
                     </ul>
                 </nav>
