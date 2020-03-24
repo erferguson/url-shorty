@@ -8,14 +8,14 @@ import { Fbook, Twit, Pin, Insta } from '../../Assets/social'
 function Footer(){
     return (
         <Router>
-            <div>
-                <nav>
-                    <ul>
+            <div className="footer">
+                <div className="footer-content">
+                    <ul className='footerLogo'>
                         <li>
                             <Link to="/"><Logo/></Link>
                         </li>
                     </ul>
-                    <ul>
+                    <ul className="features">
                         <li>
                             Features
                         </li>
@@ -29,7 +29,7 @@ function Footer(){
                             <Link to="/analytics">Analytics</Link>
                         </li>
                     </ul>
-                    <ul>
+                    <ul className='resources'>
                         <li>
                             Resources
                         </li>
@@ -43,7 +43,7 @@ function Footer(){
                             <Link to="/support">Support</Link>
                         </li>
                     </ul>
-                    <ul>
+                    <ul className='company'>
                         <li>
                             Company
                         </li>
@@ -60,7 +60,7 @@ function Footer(){
                             <Link to="/contact">Contact</Link>
                         </li>
                     </ul>
-                    <ul>
+                    <ul className='social'>
                         <li>
                             <a href to="www.facebook.com"><Fbook/></a>
                         </li>
@@ -74,7 +74,7 @@ function Footer(){
                             <a href to="www.instagram"><Insta/></a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </Router>
     )
