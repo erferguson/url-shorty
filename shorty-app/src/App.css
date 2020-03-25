@@ -350,6 +350,9 @@ template {
 /**
  * CSS code for project > below this line
  */
+* {
+  text-decoration: none;
+}
 
  .footer{
    background-color: hsl(260, 8%, 14%);
@@ -369,28 +372,48 @@ template {
  .footerLogo {
   padding-right: 200px;
   fill: white;
+  list-style-type: none;
  }
 
  .features {
    flex-direction: column;
+   border: 1px solid orange;
  }
- .features ul {
-   color:hotpink
+ .features li {
+   list-style-type: none;
+   padding:5px;
  }
 
  .resources {
   flex-direction: column;
+  border: 1px solid orange;
  }
+ .resources li {
+  list-style-type: none;
+  padding:5px;
+}
 
  .company {
    flex-direction: column;
    padding-right: 90px;
+   border: 1px solid orange;
  }
-
- .company ul li{
-   color:hotpink;
- }
+.company li {
+    list-style-type: none;
+    padding:5px;
+}
+ .company a:link {
+  color: hotpink;
+}
 
  .social {
    padding: 5px;
+   border: 1px solid orange;
+   display: flex;
+   justify-content: space-between;
  }
+ .social li {
+  list-style-type: none;
+  
+ }
+ 
