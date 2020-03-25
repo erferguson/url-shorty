@@ -19,10 +19,10 @@ import Logo from '../../Assets/Shortly'
 function Navigation() {
   return (
     <Router>
-      <div>
-        <nav>
+      <div className='navigation'>
+        <nav className='nav-container'>
           <ul>
-            <li>
+            <li className="nav-logo">
               <NavLink to="/"><Logo/></NavLink>
             </li>
             <li>
@@ -34,12 +34,16 @@ function Navigation() {
             <li>
               <NavLink to="/resources">Resources</NavLink>
             </li>
-            <li>
-              <NavLink to="/login">Login</NavLink>
-            </li>
-            <li>
-              <NavLink to="/sign-up">Sign Up</NavLink>
-            </li>
+            <div className='login-signup'>
+              <li>
+                <NavLink to="/login">Login</NavLink>
+              </li>
+              <li>
+                <NavLink className='signup' to="/sign-up">
+                  <span className="signUp-span">Sign Up</span>
+                </NavLink>
+              </li>
+            </div>
           </ul>
         </nav>
         <Switch>
