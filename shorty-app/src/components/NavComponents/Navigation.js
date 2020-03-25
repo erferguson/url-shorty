@@ -1,24 +1,14 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
   NavLink
 } from "react-router-dom";
 
-import Shortly from "../../Assets/Shortly";
-import Home from './Home'
-import Features from "./Features";
-import Pricing from "./Pricing";
-import Resources from "./Resources";
-import Login from "./Login";
-import SignUp from "./SignUp";
 import Logo from '../../Assets/Shortly'
 
 function Navigation() {
   return (
-    <Router>
+    <div>
       <div className='navigation'>
         <nav className='nav-container'>
           <ul>
@@ -46,28 +36,8 @@ function Navigation() {
             </div>
           </ul>
         </nav>
-        <Switch>
-          <Route path="/features">
-            <Features />
-          </Route>
-          <Route path="/pricing">
-            <Pricing />
-          </Route>
-          <Route path="/resources">
-            <Resources />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/sign-up">
-            <SignUp />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
       </div>
-    </Router>
+    </div>
   );
 }
 export default Navigation;
