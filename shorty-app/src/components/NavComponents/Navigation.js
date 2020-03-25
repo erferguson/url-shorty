@@ -40,7 +40,7 @@ function Navigation() {
               </li>
               <li>
                 <NavLink className='signup' to="/sign-up">
-                  <span className="signUp-span">Sign Up</span>
+                  <button className="signUp-button">Sign Up</button>
                 </NavLink>
               </li>
             </div>
