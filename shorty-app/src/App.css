@@ -389,7 +389,6 @@ li {
 }
 
 .signup {
-  background-color: hsl(180, 66%, 49%);
   width: 100px;
   height: 40px;
   border-radius: 50px;
@@ -413,12 +412,14 @@ li {
   color: #fff;
   border: none;
   box-shadow: 0 4px #999;
+  position: relative;
+  top: -12px;
 }
 .signUp-button:hover {
   background-color: hsl(180, 66%, 49%);
 }
 .signUp-button:active {
-  background-color: #3e8e41;
+  background-color: hotpink;
   box-shadow: 0 4px #666;
   transform: translateY(4px);
 }
