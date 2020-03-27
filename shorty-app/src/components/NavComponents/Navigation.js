@@ -27,7 +27,7 @@ function Navigation() {
               </li>
               <li>
                 <NavLink className='signup' to="/sign-up">
-                  <button className="signUp-button">Sign Up</button>
+                  <button className="button">Sign Up</button>
                 </NavLink>
               </li>
             </div>

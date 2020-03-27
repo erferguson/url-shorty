@@ -395,30 +395,32 @@ li {
   text-decoration: none;
   outline: none;
 }
-/* ??? */
-.signUp-button {
+/* BUTTONs */
+.button {
   background-color: hsl(180, 66%, 49%);
+  color: #fff;
+  /* padding: 20px 0; */
+  font-size: 14px;
   width: 100px;
   height: 40px;
-  border-radius: 50px;
-  text-decoration: none;
-  outline: none;
-  /* padding: 15px 25px; */
-  font-size: 14px;
-  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  top: -25px;
+  margin-top: 15px;
   text-align: center;
+  position: relative;
+  cursor: pointer;
   text-decoration: none;
   outline: none;
-  color: #fff;
+  text-decoration: none;
+  outline: none;
   border: none;
-  box-shadow: 0 4px #999;
-  position: relative;
-  top: -12px;
 }
-.signUp-button:hover {
+.button:hover {
   background-color: hsl(180, 66%, 49%);
 }
-.signUp-button:active {
+.button:active {
   background-color: hotpink;
   box-shadow: 0 4px #666;
   transform: translateY(4px);
@@ -452,11 +454,11 @@ section {
 }
 
 h1 {
-  color: hsl(179, 62%, 43%);
+  color: hsl(257, 27%, 26%);
   font-size: 40px;
 }
 h2 {
-  color: hsl(71, 73%, 54%);
+  color: hsl(0, 87%, 67%);
   font-size: 25px;
 }
 
@@ -472,18 +474,17 @@ p.light-black {
 .row {
   display: flex;
 }
-/* row and direct children = take up the same amount of width */
+
 .row > section {
   flex: 1;
 }
 
 .cyan {
-  /* background-color: hsl(179, 62%, 43%); */
-  background-color:hsl(257, 7%, 63%);
+  background-color:hsl(255, 11%, 22%);
   color: #fff;
 }
 .grayish-blue{
-  background-color: hsl(179, 47%, 52%);
+  background-color: hsl(257, 27%, 26%);
   color: #fff;
 }
 .grayish-blue ul {
@@ -496,20 +497,6 @@ p.light-black {
 }
 .pricing-ul li{
   line-height: 28px; 
-}
-
-.yellow-button {
-  background-color:hsl(71, 73%, 54%);
-  color: #fff;
-  width: 100%;
-  padding: 20px 0;
-  font-size: 18px;
-  border-radius: 5px;
-  font-family: "Karla", sans-serif;
-  font-weight: 700;
-  border: none;
-  margin-top: 15px;
-  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
 }
 
 p.faded {

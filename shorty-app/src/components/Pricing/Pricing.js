@@ -24,11 +24,11 @@ function Pricing (){
             <section class="cyan">
             <h2>Monthly Subscription</h2>
 
-            <p class="faded"><span class="big">&dollar;29</span> per month</p>
+            <p class="faded"><span class="big">${29}</span> per month</p>
 
-            <p>Full access for less than &dollar;1 a day</p>
+            <p>Full access for less than ${1} a day</p>
 
-            <button class="yellow-button">Sign Up</button>
+            <button class="button">Sign Up</button>
             </section>
 
             <section class="grayish-blue">
