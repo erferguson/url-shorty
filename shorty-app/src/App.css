@@ -352,17 +352,17 @@ template {
  */
 * {
   text-decoration: none;
+  
 }
 
 /* Navigation */
 nav {
   margin: 0 20%;
-  width: auto;
+  /* width: auto; */
   height: 100px;
 }
 
 ul {
-  text-decoration: none;
   list-style-type: none;
   display: flex;
   font-size: 15px;
@@ -371,9 +371,12 @@ ul {
 
 li {
   padding: 20px;
-  color: hsl(257, 7%, 63%);
+}
+a {
+  color:hsl(257, 7%, 63%);
+  padding: 20px;
+  font-family: 'Poppins';
   font-weight: 700;
-  font-family: 'Poppins'
 }
 
 .nav-logo {
@@ -424,6 +427,31 @@ li {
   transform: translateY(4px);
 }
 
+/* HEADER */
+.header-container {
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.header-left {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-innerContainer {
+  width: 300px;
+}
+.header-btn {
+  border: 1px solid red;
+  width: 100px;
+  
+}
+.workingLogo{
+  border: 1px solid red;
+}
 
 /* PRICING */
 .pricing {
@@ -453,7 +481,7 @@ section {
 
 h1 {
   color: hsl(257, 27%, 26%);
-  font-size: 40px;
+  font-size: 60px;
 }
 .pricing-join{
   display:flex;
@@ -590,6 +618,8 @@ p.faded span {
  }
  
  /*https://dev.to/letsbsocial1/flexbox-sticky-footer-and-react-e1h */
+ 
+ /* :root may not be needed */
  :root {
   --space: 1.5em 0;
   --space: 2em 0;
@@ -607,6 +637,7 @@ p.faded span {
   width: 100%;
 }
 
+/* .Site-content:after may not be needed */
 .Site-content:after {
   content: '\00a0';
   display: block;

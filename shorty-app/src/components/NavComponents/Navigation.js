@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Logo from '../../Assets/Shortly'
 
@@ -10,25 +10,25 @@ function Navigation() {
         <nav className='nav-container'>
           <ul>
             <li className="nav-logo">
-              <NavLink to="/"><Logo/></NavLink>
+              <Link to="/"><Logo/></Link>
             </li>
             <li>
-              <NavLink to="/features">Features</NavLink>
+              <Link to="/features">Features</Link>
             </li>
             <li>
-              <NavLink to="/pricing">Pricing</NavLink>
+              <Link to="/pricing">Pricing</Link>
             </li>
             <li>
-              <NavLink to="/resources">Resources</NavLink>
+              <Link to="/resources">Resources</Link>
             </li>
             <div className='login-signup'>
               <li>
-                <NavLink to="/login">Login</NavLink>
+                <Link to="/login">Login</Link>
               </li>
               <li>
-                <NavLink className='signup' to="/sign-up">
+                <Link className='signup' to="/sign-up">
                   <button className="button">Sign Up</button>
-                </NavLink>
+                </Link>
               </li>
             </div>
           </ul>

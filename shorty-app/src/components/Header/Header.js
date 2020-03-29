@@ -4,17 +4,21 @@ import ShortenLogo from '../../Assets/shorten'
 
 function Header (){
     return (
-        <div>
-            <div>
-                <div>
+        <div className="header-container">
+            <div className="header-left">
+                <div className="header-innerContainer">
                     <h1>More than just shorter links</h1>
-                    <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
-                    <button className="button">Get Started!</button>
+                        <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                    <div>
+                        <button className="button header-btn">Get Started!</button>
+                    </div>
                 </div>
+                <div className="workingLogo">
+                  <WorkingLogo />   
+                </div>
+               
             </div>
-            <h3>Header</h3>
-            <WorkingLogo />
-            <ShortenLogo /> 
+            {/* <ShortenLogo />  */}
         </div>
     )
 }
