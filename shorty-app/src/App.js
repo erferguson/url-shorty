@@ -14,8 +14,9 @@ import SignUp from './components/SignUp/SignUp'
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
+    <div className="App Site">
+      <div className="Site-content">
+      <Navigation /> 
         <Switch>
           <Route path="/features"><Features/></Route>
           <Route path="/pricing"><Pricing /></Route>
@@ -24,7 +25,8 @@ function App() {
           <Route path="/sign-up"><SignUp /></Route>
           <Route exact path="/"><Home/></Route>
         </Switch>
-      <Footer /> 
+      </div>
+      <Footer />
     </div>
   );
 }
