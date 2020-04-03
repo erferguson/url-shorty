@@ -1,46 +1,47 @@
 import React from 'react'
+import ErrorLogo from '../../Assets/error-icon'
 
 import { Alert } from '../../images/icon-error.svg'
 
 function SignUp(){
     return (
-    <div className="container">
+    <div className="su-container">
         <h2>Sign Up</h2>
       <div>
-        <h1>
+        <h1 className="su-h1">
           Learn to code by
           <br /> 
           watching others
         </h1>
-        <p id="p-mobile">
+        <p className="su-p" id="p-mobile">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </div>
       <div>
-        <div className="box box-blue">
+        <div className="su-box box-blue">
           <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
-        <form className="box" id='form'>
+        <form className="su-box" id='form'>
           <div className="form-control">
             <input type="text" id="firstname" placeholder="First Name" />
-            <img src="./images/icon-error.svg" alt="error-icon" /> 
+            <ErrorLogo /> 
             <small></small>
           </div>
           <div className="form-control">
             <input type="text" id="lastname" placeholder="Last Name" />
-            <img src="./images/icon-error.svg" alt="error-icon" /> 
+            <ErrorLogo />  
             <small></small>
           </div>
           <div className="form-control">
             <input type="email" id="email" placeholder="Email" />
-            <img src="./images/icon-error.svg" alt="error-icon" /> 
+            <ErrorLogo /> 
             <small></small>
           </div>
           <div className="form-control">
             <input type="password" id="password" placeholder="Password" />
-            <img src="./images/icon-error.svg" alt="error-icon" /> 
+            <ErrorLogo />  
             <small></small>
           </div>
 
@@ -50,6 +51,7 @@ function SignUp(){
             <a href>Terms and Services</a></small>
         </form>
       </div>
+      <script src="../script.js"></script>
     </div>
     )
 }
