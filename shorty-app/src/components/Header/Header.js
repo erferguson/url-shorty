@@ -6,18 +6,17 @@ function Header (){
     return (
         <div className="header-container">
             <div className="header-left">
-                <div className="header-innerContainer">
-                    <h1>More than just shorter links</h1>
-                        <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                    <h1 className="header-h1">More than just shorter links</h1>
+                        <p className="header-p">Build your brand's recognition and get detailed insights on how your links are performing.</p>
                     <div>
                         <button className="button header-btn">Get Started!</button>
                     </div>
-                </div>
-                <div className="workingLogo">
+            </div>
+            <div className="header-right">
+                <div>
                   <WorkingLogo />   
                 </div>
-               
-            </div>
+            </div>   
             {/* <ShortenLogo />  */}
         </div>
     )

@@ -429,28 +429,40 @@ a {
 
 /* HEADER */
 .header-container {
-  border: 1px solid orange;
+  border: 3px solid red;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  justify-content: center;
   margin-left: 100px;
 }
 
 .header-left {
-  border: 1px solid;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
+  margin-right: 75px;
+}
+.header-h1 {
+  border: 1px solid red;
+  width: 400px;
+  margin-top: 75px;
 }
 
-.header-innerContainer {
-  width: 300px;
+.header-p {
+  border: 1px solid red;
+  color: darkgray;
+  font-weight: 500;
+  width: 400px;
+  line-height: 25px;
 }
 .header-btn {
-  border: 1px solid red;
-  width: 100px;
-  
+  width: 150px;
+  border-radius: 20px;
 }
-.workingLogo{
-  border: 1px solid red;
+.header-right{
+  border: 1px solid black;
+  margin-left: 75px;
+  width: 375px;
 }
 
 /* PRICING */
