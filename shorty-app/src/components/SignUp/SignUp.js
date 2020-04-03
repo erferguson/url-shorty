@@ -1,8 +1,10 @@
 import React from 'react'
 
+import { Alert } from '../../images/icon-error.svg'
+
 function SignUp(){
     return (
-    <div class="container">
+    <div className="container">
         <h2>Sign Up</h2>
       <div>
         <h1>
@@ -17,26 +19,26 @@ function SignUp(){
         </p>
       </div>
       <div>
-        <div class="box box-blue">
+        <div className="box box-blue">
           <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
-        <form class="box" id='form'>
-          <div class="form-control">
+        <form className="box" id='form'>
+          <div className="form-control">
             <input type="text" id="firstname" placeholder="First Name" />
             <img src="./images/icon-error.svg" alt="error-icon" /> 
             <small></small>
           </div>
-          <div class="form-control">
+          <div className="form-control">
             <input type="text" id="lastname" placeholder="Last Name" />
             <img src="./images/icon-error.svg" alt="error-icon" /> 
             <small></small>
           </div>
-          <div class="form-control">
+          <div className="form-control">
             <input type="email" id="email" placeholder="Email" />
             <img src="./images/icon-error.svg" alt="error-icon" /> 
             <small></small>
           </div>
-          <div class="form-control">
+          <div className="form-control">
             <input type="password" id="password" placeholder="Password" />
             <img src="./images/icon-error.svg" alt="error-icon" /> 
             <small></small>
