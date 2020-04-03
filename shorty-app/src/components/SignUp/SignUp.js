@@ -6,7 +6,6 @@ import { Alert } from '../../images/icon-error.svg'
 function SignUp(){
     return (
     <div className="su-container">
-        <h2>Sign Up</h2>
       <div>
         <h1 className="su-h1">
           Learn to code by
@@ -20,7 +19,7 @@ function SignUp(){
         </p>
       </div>
       <div>
-        <div className="su-box box-blue">
+        <div className="su-box su-box-blue">
           <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
         <form className="su-box" id='form'>

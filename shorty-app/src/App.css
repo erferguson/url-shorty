@@ -680,7 +680,7 @@ p.faded span {
   margin: 0;
 }
 
-.box-blue {
+.su-box-blue {
   background-color: hsl(248, 32%, 49%);
   padding: 20px;
 }
